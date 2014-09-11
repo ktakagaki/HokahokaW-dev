@@ -1,0 +1,560 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21265,        551]
+NotebookOptionsPosition[     18906,        463]
+NotebookOutlinePosition[     19247,        478]
+CellTagsIndexPosition[     19204,        475]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"<<", "HokahokaW`"}]], "Input",
+ CellChangeTimes->{{3.6194290773146334`*^9, 3.6194290808908377`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["HHNewestFileDate", "Section",
+ CellChangeTimes->{{3.6194295596872234`*^9, 3.619429563883464*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HHNewestFileDate", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6194295096753635`*^9, 3.619429522072072*^9}}],
+
+Cell[BoxData["\<\"Thu 11 Sep 2014 20:37:26\"\>"], "Output",
+ CellChangeTimes->{3.619429522822115*^9, 3.619446080200143*^9, 
+  3.6194474769220304`*^9, 3.6194496486682477`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", " ", "//", " ", "InputForm"}]], "Input",
+ CellChangeTimes->{{3.6194474577359333`*^9, 3.619447460936116*^9}}],
+
+Cell["\"Thu 11 Sep 2014 20:37:26\"", "Output",
+ CellChangeTimes->{3.6194496531355033`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Programming/Troubleshooting", "Subsection",
+ CellChangeTimes->{{3.6194295718889217`*^9, 3.6194295747610855`*^9}, {
+  3.6194474052629323`*^9, 3.6194474116632986`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", " ", 
+  RowBox[{"ParentDirectory", "[", 
+   RowBox[{"DirectoryName", "[", " ", 
+    RowBox[{"FindFile", "[", "\"\<HokahokaW`\>\"", "]"}], " ", "]"}], "]"}], 
+  " ", "]"}]], "Input",
+ CellChangeTimes->{{3.619429582231513*^9, 3.6194295856797104`*^9}}],
+
+Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
+HokahokaW\"\>"], "Output",
+ CellChangeTimes->{3.6194295862577434`*^9, 3.619436114276125*^9, 
+  3.6194460819562435`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindFile", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input"],
+
+Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
+HokahokaW\\\\Kernel\\\\init.m\"\>"], "Output",
+ CellChangeTimes->{3.6194502337517123`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"ParentDirectory", "[", 
+   RowBox[{"DirectoryName", "[", " ", 
+    RowBox[{"FindFile", "[", "\"\<HokahokaW`\>\"", "]"}], "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6194475518083143`*^9, 3.619447551959323*^9}}],
+
+Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
+HokahokaW\"\>"], "Output",
+ CellChangeTimes->{3.619447552676364*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"ParentDirectory", "[", 
+   RowBox[{"DirectoryName", "[", " ", 
+    RowBox[{"FindFile", "[", "\"\<HokahokaWMisspelled`\>\"", "]"}], "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6194475518083143`*^9, 3.619447551959323*^9}, {
+  3.619450082020034*^9, 3.6194500854852324`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"DirectoryName", "::", "string"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"String expected at position \[NoBreak]\\!\\(1\\)\[NoBreak] \
+in \[NoBreak]\\!\\(DirectoryName[$Failed]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\
+\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/DirectoryName\\\", ButtonNote -> \
+\\\"DirectoryName::string\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.619450085920257*^9, 3.619450895355554*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ParentDirectory", "::", "fstr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"File specification \
+\[NoBreak]\\!\\(DirectoryName[$Failed]\\)\[NoBreak] is not a string of one or \
+more characters. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\
+\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/fstr\\\", ButtonNote -> \
+\\\"ParentDirectory::fstr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.619450085920257*^9, 3.619450895423558*^9}],
+
+Cell[BoxData[
+ RowBox[{"ParentDirectory", "[", 
+  RowBox[{"DirectoryName", "[", "$Failed", "]"}], "]"}]], "Output",
+ CellChangeTimes->{3.619450085992261*^9, 3.6194508954245577`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileNames", "[", " ", 
+  RowBox[{"\"\<*\>\"", ",", "%", ",", "Infinity"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6194475340162964`*^9, 3.6194475568015995`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\
+\\.git\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\COMMIT_EDITMSG\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\config\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\description\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\FETCH_HEAD\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\HEAD\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\applypatch-msg.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\commit-msg.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\post-commit.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\post-receive.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\post-update.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\pre-applypatch.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\pre-commit.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\prepare-commit-msg.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\pre-push.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\pre-rebase.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\hooks\\\\update.sample\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\index\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\info\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\info\\\\exclude\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\HEAD\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\refs\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\refs\\\\heads\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\refs\\\\heads\\\\master\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\refs\\\\remotes\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\refs\\\\remotes\\\\origin\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\logs\\\\refs\\\\remotes\\\\origin\\\\master\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\1a\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\1a\\\\c734ebc7cb45a4ec206a77f8080ba64950399f\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\32\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\32\\\\ab17994799381fbb43cb2ca8ac70a6135da141\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\34\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\34\\\\1dd63b7b4f77971f966c5ecf4393ac9b4d631f\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\49\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\49\\\\ca6d9e1daac01531525d55b17cd50b32ddaaee\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\4f\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\4f\\\\b54549eed468aa94063740c22190cdfaa1c532\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\5c\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\5c\\\\304d1a4a7b439f767990bf1360d3283e45d0ee\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\6e\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\6e\\\\17ea2df3ff4f165a59dd4c0ed744536ea9c83b\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\77\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\77\\\\ca873247c44f84fb453f3daa2d07a23ab560eb\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\7b\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\7b\\\\3371691bdb00d03d292588e7195023268fb5cf\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\94\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\94\\\\ffd5cde70edcbe189df5103a2e2d8e98880014\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\aa\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\aa\\\\fd90072694791e6c7a47f28c4e91e7c6485817\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\b9\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\b9\\\\0ffb1bb18df3213d5b63527a62054233fb4f8b\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\e6\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\e6\\\\9de29bb2d1d6434b8b29ae775ad8c2e48c5391\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\info\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\objects\\\\pack\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\ORIG_HEAD\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\\\\heads\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\\\\heads\\\\master\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\\\\remotes\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\\\\remotes\\\\origin\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\\\\remotes\\\\origin\\\\master\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+.git\\\\refs\\\\tags\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+HokahokaW.m\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+Kernel\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+Kernel\\\\init.m\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+LICENSE\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+PacletInfo.m\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\HokahokaW\\\\\
+README.md\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.619447540033641*^9, 3.6194475572216234`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReadList", "[", "\"\<!git --no-pager diff\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.619435804962433*^9, 3.6194358083066244`*^9}, {
+  3.619436044873155*^9, 3.6194360754089017`*^9}, {3.6194363170977254`*^9, 
+  3.619436325536208*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.619435808597641*^9, {3.619436056186802*^9, 3.6194360757919235`*^9}, {
+   3.6194363180927825`*^9, 3.619436325834225*^9}, 3.6194365710292497`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OpenRead", "[", "\"\<stdout\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6194298232222967`*^9, 3.619429828974626*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"OpenRead", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \[NoBreak]\\!\\(\\\"stdout\\\"\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/noopen\\\", \
+ButtonNote -> \\\"OpenRead::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6194298294346523`*^9}],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.6194298294356527`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["HHGitRemotes", "Section",
+ CellChangeTimes->{{3.6194295596872234`*^9, 3.619429563883464*^9}, {
+  3.619447365864679*^9, 3.6194473695278883`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HHGitRemotes", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.619447378848421*^9, 3.619447386449856*^9}, {
+  3.6194474363367095`*^9, 3.619447455943831*^9}}],
+
+Cell[BoxData["\<\"origin\\thttps://github.com/ktakagaki/HokahokaW.git (fetch)\
+\\norigin\\thttps://github.com/ktakagaki/HokahokaW.git (push)\"\>"], "Output",
+ CellChangeTimes->{
+  3.619447387107894*^9, {3.6194474370857525`*^9, 3.619447456534865*^9}, 
+   3.619450732468238*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", " ", "//", " ", "InputForm"}]], "Input",
+ CellChangeTimes->{{3.6194474577359333`*^9, 3.619447460936116*^9}}],
+
+Cell["\<\
+\"origin\\thttps://ktakagaki@github.com/ktakagaki/HokahokaW.git \\
+(fetch)\\norigin\\thttps://ktakagaki@github.com/ktakagaki/HokahokaW.git \
+(push)\"\
+\>", "Output",
+ CellChangeTimes->{3.6194474611201267`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Programming/Troubleshooting", "Subsection",
+ CellChangeTimes->{{3.6194295718889217`*^9, 3.6194295747610855`*^9}, {
+  3.6194474052629323`*^9, 3.6194474116632986`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindFile", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6194474168055925`*^9, 3.6194474314804316`*^9}}],
+
+Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
+HokahokaW\\\\Kernel\\\\init.m\"\>"], "Output",
+ CellChangeTimes->{3.619447432927514*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Run", "[", "\"\<git remote -v > HHTempGitRemotes.txt\>\"", "]"}], 
+  ";"}], "\n", 
+ RowBox[{"Import", "[", "\"\<HHTempGitRemotes.txt\>\"", "]"}]}], "Input",
+ CellChangeTimes->{{3.619429600743572*^9, 3.619429601504616*^9}, {
+   3.619436082106285*^9, 3.6194360824523044`*^9}, 3.619437248081975*^9}],
+
+Cell[BoxData["\<\"origin\\thttps://ktakagaki@github.com/ktakagaki/HokahokaW.\
+git (fetch)\\norigin\\thttps://ktakagaki@github.com/ktakagaki/HokahokaW.git \
+(push)\"\>"], "Output",
+ CellChangeTimes->{3.6194296019056387`*^9, 3.6194360833793573`*^9, 
+  3.6194373514448867`*^9, 3.6194460856834564`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"<<", "\"\<!git remote -v\>\""}]], "Input",
+ CellChangeTimes->{{3.619429600743572*^9, 3.619429601504616*^9}, {
+  3.6194297224785347`*^9, 3.6194297356622887`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReadList", "[", "\"\<!git remote -v\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.619435804962433*^9, 3.6194358083066244`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReadList", "::", "readt"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Invalid input found when reading \
+\[NoBreak]\\!\\(\\\"origin\\\\thttps://ktakagaki@github.com/ktakagaki/\
+HokahokaW.git (fetch)\\\\n\\\"\\)\[NoBreak] from \[NoBreak]\\!\\(\\\"!git \
+remote -v\\\"\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReadList/readt\\\", ButtonNote -> \
+\\\"ReadList::readt\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6194460932128873`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", "$Failed", "}"}]], "Output",
+ CellChangeTimes->{3.619435808597641*^9, 3.6194460932128873`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Run", "[", "\"\<git remote -v | clip\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.619430194300522*^9, 3.619430197467703*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"origin", " ", 
+   RowBox[{"https", ":"}]}], "//", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"ktakagaki", "@", "github"}], ".", "com"}], "/", "ktakagaki"}], 
+    "/", 
+    RowBox[{"HokahokaW", ".", "git"}]}], " ", 
+   RowBox[{"(", "fetch", ")"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"origin", " ", 
+   RowBox[{"https", ":"}]}], "//", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"ktakagaki", "@", "github"}], ".", "com"}], "/", "ktakagaki"}], 
+    "/", 
+    RowBox[{"HokahokaW", ".", "git"}]}], " ", 
+   RowBox[{"(", "push", ")"}]}]}], "\n"}], "Input",
+ CellChangeTimes->{{3.6194461154041567`*^9, 3.6194461154051566`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{784, 911},
+WindowMargins->{{Automatic, 56}, {92, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 124, 2, 64, "Input"],
+Cell[CellGroupData[{
+Cell[707, 26, 103, 1, 63, "Section"],
+Cell[CellGroupData[{
+Cell[835, 31, 154, 2, 31, "Input"],
+Cell[992, 35, 174, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1203, 42, 136, 2, 31, "Input"],
+Cell[1342, 46, 90, 1, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1469, 52, 172, 2, 43, "Subsection"],
+Cell[CellGroupData[{
+Cell[1666, 58, 293, 6, 31, "Input"],
+Cell[1962, 66, 191, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2190, 74, 78, 1, 31, "Input"],
+Cell[2271, 77, 162, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2470, 84, 258, 6, 31, "Input"],
+Cell[2731, 92, 140, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2908, 99, 319, 7, 31, "Input"],
+Cell[3230, 108, 527, 10, 21, "Message"],
+Cell[3760, 120, 535, 11, 21, "Message"],
+Cell[4298, 133, 181, 3, 64, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4516, 141, 185, 3, 31, "Input"],
+Cell[4704, 146, 8648, 146, 1812, "Output"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[13389, 297, 258, 4, 25, "Input"],
+Cell[13650, 303, 214, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13901, 312, 142, 2, 31, "Input"],
+Cell[14046, 316, 446, 9, 21, "Message"],
+Cell[14495, 327, 78, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14634, 335, 150, 2, 63, "Section"],
+Cell[CellGroupData[{
+Cell[14809, 341, 199, 3, 31, "Input"],
+Cell[15011, 346, 276, 4, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15324, 355, 136, 2, 31, "Input"],
+Cell[15463, 359, 219, 5, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15719, 369, 172, 2, 43, "Subsection"],
+Cell[CellGroupData[{
+Cell[15916, 375, 148, 2, 31, "Input"],
+Cell[16067, 379, 160, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16264, 386, 332, 6, 52, "Input"],
+Cell[16599, 394, 298, 4, 52, "Output"]
+}, Open  ]],
+Cell[16912, 401, 185, 3, 31, "Input"],
+Cell[CellGroupData[{
+Cell[17122, 408, 150, 2, 31, "Input"],
+Cell[17275, 412, 598, 12, 39, "Message"],
+Cell[17876, 426, 122, 2, 31, "Output"]
+}, Open  ]],
+Cell[18013, 431, 167, 3, 31, "Input"],
+Cell[18183, 436, 695, 23, 72, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
