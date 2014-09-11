@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21265,        551]
-NotebookOptionsPosition[     18906,        463]
-NotebookOutlinePosition[     19247,        478]
-CellTagsIndexPosition[     19204,        475]
+NotebookDataLength[     25913,        667]
+NotebookOptionsPosition[     22953,        557]
+NotebookOutlinePosition[     23294,        572]
+CellTagsIndexPosition[     23251,        569]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,9 +33,10 @@ Cell[BoxData[
  RowBox[{"HHNewestFileDate", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.6194295096753635`*^9, 3.619429522072072*^9}}],
 
-Cell[BoxData["\<\"Thu 11 Sep 2014 20:37:26\"\>"], "Output",
+Cell[BoxData["\<\"Fri 12 Sep 2014 01:31:58\"\>"], "Output",
  CellChangeTimes->{3.619429522822115*^9, 3.619446080200143*^9, 
-  3.6194474769220304`*^9, 3.6194496486682477`*^9}]
+  3.6194474769220304`*^9, 3.6194496486682477`*^9, 3.619451570712182*^9, 
+  3.61945471054177*^9, 3.619467291838379*^9, 3.619467356730091*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -44,8 +45,9 @@ Cell[BoxData[
  RowBox[{"%", " ", "//", " ", "InputForm"}]], "Input",
  CellChangeTimes->{{3.6194474577359333`*^9, 3.619447460936116*^9}}],
 
-Cell["\"Thu 11 Sep 2014 20:37:26\"", "Output",
- CellChangeTimes->{3.6194496531355033`*^9}]
+Cell["\"Fri 12 Sep 2014 01:31:58\"", "Output",
+ CellChangeTimes->{3.6194496531355033`*^9, 3.619451571873249*^9, 
+  3.6194547119078484`*^9, 3.6194672924394135`*^9, 3.6194673570401087`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -67,7 +69,8 @@ Cell[BoxData[
 Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
 HokahokaW\"\>"], "Output",
  CellChangeTimes->{3.6194295862577434`*^9, 3.619436114276125*^9, 
-  3.6194460819562435`*^9}]
+  3.6194460819562435`*^9, 3.6194515741783805`*^9, 3.619467293857495*^9, 
+  3.619467358393186*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -77,22 +80,8 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
 HokahokaW\\\\Kernel\\\\init.m\"\>"], "Output",
- CellChangeTimes->{3.6194502337517123`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{" ", 
-  RowBox[{"ParentDirectory", "[", 
-   RowBox[{"DirectoryName", "[", " ", 
-    RowBox[{"FindFile", "[", "\"\<HokahokaW`\>\"", "]"}], "]"}], 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.6194475518083143`*^9, 3.619447551959323*^9}}],
-
-Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
-HokahokaW\"\>"], "Output",
- CellChangeTimes->{3.619447552676364*^9}]
+ CellChangeTimes->{3.6194502337517123`*^9, 3.619467297341694*^9, 
+  3.6194673449694185`*^9, 3.619468049772731*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -116,7 +105,8 @@ in \[NoBreak]\\!\\(DirectoryName[$Failed]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\
 \"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/DirectoryName\\\", ButtonNote -> \
 \\\"DirectoryName::string\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.619450085920257*^9, 3.619450895355554*^9}],
+ CellChangeTimes->{3.619450085920257*^9, 3.619450895355554*^9, 
+  3.619467372815011*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -129,12 +119,14 @@ more characters. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\
 \"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/General/fstr\\\", ButtonNote -> \
 \\\"ParentDirectory::fstr\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.619450085920257*^9, 3.619450895423558*^9}],
+ CellChangeTimes->{3.619450085920257*^9, 3.619450895355554*^9, 
+  3.6194673728750143`*^9}],
 
 Cell[BoxData[
  RowBox[{"ParentDirectory", "[", 
   RowBox[{"DirectoryName", "[", "$Failed", "]"}], "]"}]], "Output",
- CellChangeTimes->{3.619450085992261*^9, 3.6194508954245577`*^9}]
+ CellChangeTimes->{3.619450085992261*^9, 3.6194508954245577`*^9, 
+  3.6194673728760147`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -317,9 +309,8 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"OpenRead", "::", "noopen"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Cannot open \[NoBreak]\\!\\(\\\"stdout\\\"\\)\[NoBreak]. \
+   RowBox[{"OpenRead", "::", "noopen"}], "MessageName"], ":", 
+  " ", "\<\"Cannot open \[NoBreak]\\!\\(\\\"stdout\\\"\\)\[NoBreak]. \
 \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/noopen\\\", \
 ButtonNote -> \\\"OpenRead::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
@@ -328,7 +319,7 @@ ButtonNote -> \\\"OpenRead::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
 Cell[BoxData["$Failed"], "Output",
  CellChangeTimes->{3.6194298294356527`*^9}]
 }, Open  ]]
-}, Open  ]]
+}, Closed]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -348,7 +339,8 @@ Cell[BoxData["\<\"origin\\thttps://github.com/ktakagaki/HokahokaW.git (fetch)\
 \\norigin\\thttps://github.com/ktakagaki/HokahokaW.git (push)\"\>"], "Output",
  CellChangeTimes->{
   3.619447387107894*^9, {3.6194474370857525`*^9, 3.619447456534865*^9}, 
-   3.619450732468238*^9}]
+   3.619450732468238*^9, 3.6194515822798443`*^9, 3.61946738643979*^9, {
+   3.619467555805477*^9, 3.6194676017871075`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -367,9 +359,61 @@ Cell["\<\
 
 Cell[CellGroupData[{
 
+Cell[BoxData[
+ RowBox[{"HHGitRemotes", "[", "]"}]], "Input",
+ CellChangeTimes->{3.619467534547261*^9}],
+
+Cell[BoxData["\<\"origin\\thttps://github.com/ktakagaki/HokahokaW-dev.git \
+(fetch)\\norigin\\thttps://github.com/ktakagaki/HokahokaW-dev.git \
+(push)\"\>"], "Output",
+ CellChangeTimes->{3.6194675539453707`*^9, 3.6194675985369215`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Programming/Troubleshooting", "Subsection",
  CellChangeTimes->{{3.6194295718889217`*^9, 3.6194295747610855`*^9}, {
   3.6194474052629323`*^9, 3.6194474116632986`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$Path"], "Input",
+ CellChangeTimes->{{3.6194516131126075`*^9, 3.619451614066662*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\
+\\\\SystemFiles\\\\Links\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Kenta\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
+Kernel\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Kenta\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
+Autoload\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Kenta\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
+Applications\"\>", ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Kernel\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Autoload\"\>", 
+   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\"\>", 
+   ",", "\<\".\"\>", ",", "\<\"C:\\\\Users\\\\Kenta\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\AddOns\\\\Packages\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\AddOns\\\\LegacyPackages\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\SystemFiles\\\\Autoload\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\AddOns\\\\Autoload\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\AddOns\\\\Applications\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\AddOns\\\\ExtraPackages\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\SystemFiles\\\\Kernel\\\\Packages\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\Documentation\\\\English\\\\System\"\>", 
+   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\10.0\\\
+\\SystemFiles\\\\Data\\\\ICC\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.619453667664121*^9, 3.619453975569732*^9, 
+  3.619467305126139*^9, 3.619467390057997*^9}]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -379,7 +423,19 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
 HokahokaW\\\\Kernel\\\\init.m\"\>"], "Output",
- CellChangeTimes->{3.619447432927514*^9}]
+ CellChangeTimes->{3.619447432927514*^9, 3.619451591256357*^9, 
+  3.619452466192401*^9, 3.619467395787325*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Directory", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.619467415752467*^9, 3.6194674178755884`*^9}}],
+
+Cell[BoxData["\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\\\\\
+HokahokaW\"\>"], "Output",
+ CellChangeTimes->{3.619467418364616*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -392,17 +448,12 @@ Cell[BoxData[{
  CellChangeTimes->{{3.619429600743572*^9, 3.619429601504616*^9}, {
    3.619436082106285*^9, 3.6194360824523044`*^9}, 3.619437248081975*^9}],
 
-Cell[BoxData["\<\"origin\\thttps://ktakagaki@github.com/ktakagaki/HokahokaW.\
-git (fetch)\\norigin\\thttps://ktakagaki@github.com/ktakagaki/HokahokaW.git \
-(push)\"\>"], "Output",
+Cell[BoxData["\<\"origin\\thttps://github.com/ktakagaki/HokahokaW.git (fetch)\
+\\norigin\\thttps://github.com/ktakagaki/HokahokaW.git (push)\"\>"], "Output",
  CellChangeTimes->{3.6194296019056387`*^9, 3.6194360833793573`*^9, 
-  3.6194373514448867`*^9, 3.6194460856834564`*^9}]
+  3.6194373514448867`*^9, 3.6194460856834564`*^9, 3.619451655225016*^9, 
+  3.6194674007506084`*^9}]
 }, Open  ]],
-
-Cell[BoxData[
- RowBox[{"<<", "\"\<!git remote -v\>\""}]], "Input",
- CellChangeTimes->{{3.619429600743572*^9, 3.619429601504616*^9}, {
-  3.6194297224785347`*^9, 3.6194297356622887`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -416,17 +467,18 @@ Cell[BoxData[
    RowBox[{"ReadList", "::", "readt"}], "MessageName"], 
   RowBox[{
   ":", " "}], "\<\"Invalid input found when reading \
-\[NoBreak]\\!\\(\\\"origin\\\\thttps://ktakagaki@github.com/ktakagaki/\
-HokahokaW.git (fetch)\\\\n\\\"\\)\[NoBreak] from \[NoBreak]\\!\\(\\\"!git \
-remote -v\\\"\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+\[NoBreak]\\!\\(\\\"origin\\\\thttps://github.com/ktakagaki/HokahokaW.git \
+(fetch)\\\\n\\\"\\)\[NoBreak] from \[NoBreak]\\!\\(\\\"!git remote -v\\\"\\)\
+\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
 ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/ReadList/readt\\\", ButtonNote -> \
 \\\"ReadList::readt\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6194460932128873`*^9}],
+ CellChangeTimes->{3.6194460932128873`*^9, 3.6194674565357995`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", "$Failed", "}"}]], "Output",
- CellChangeTimes->{3.619435808597641*^9, 3.6194460932128873`*^9}]
+ CellChangeTimes->{3.619435808597641*^9, 3.6194460932128873`*^9, 
+  3.6194674565378*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -458,6 +510,48 @@ Cell[BoxData[{
     RowBox[{"HokahokaW", ".", "git"}]}], " ", 
    RowBox[{"(", "push", ")"}]}]}], "\n"}], "Input",
  CellChangeTimes->{{3.6194461154041567`*^9, 3.6194461154051566`*^9}}]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["HHGitRemotes", "Section",
+ CellChangeTimes->{{3.6194295596872234`*^9, 3.619429563883464*^9}, {
+  3.619447365864679*^9, 3.6194473695278883`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HHGitHEADHash", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.619447378848421*^9, 3.619447386449856*^9}, {
+   3.6194474363367095`*^9, 3.619447455943831*^9}, 3.6194676259004865`*^9}],
+
+Cell[BoxData["\<\"043665da86a3ec16571d562fcda3a041959f9bfa\"\>"], "Output",
+ CellChangeTimes->{
+  3.619447387107894*^9, {3.6194474370857525`*^9, 3.619447456534865*^9}, 
+   3.619450732468238*^9, 3.6194515822798443`*^9, 3.61946738643979*^9, {
+   3.619467555805477*^9, 3.6194676017871075`*^9}, 3.6194676378951726`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", " ", "//", " ", "InputForm"}]], "Input",
+ CellChangeTimes->{{3.6194474577359333`*^9, 3.619447460936116*^9}}],
+
+Cell["\"043665da86a3ec16571d562fcda3a041959f9bfa\"", "Output",
+ CellChangeTimes->{3.6194474611201267`*^9, 3.6194676397782803`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HHGitHEADHash", "[", "]"}]], "Input",
+ CellChangeTimes->{3.619467534547261*^9, 3.6194676278906*^9}],
+
+Cell[BoxData["\<\"8e8c81ffc70d026ca4dcf615359cdf7386f7ba2e\"\>"], "Output",
+ CellChangeTimes->{3.6194675539453707`*^9, 3.6194675985369215`*^9, 
+  3.6194676424554334`*^9}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -477,80 +571,102 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 124, 2, 64, "Input"],
+Cell[558, 20, 124, 2, 31, "Input"],
 Cell[CellGroupData[{
 Cell[707, 26, 103, 1, 63, "Section"],
 Cell[CellGroupData[{
 Cell[835, 31, 154, 2, 31, "Input"],
-Cell[992, 35, 174, 2, 31, "Output"]
+Cell[992, 35, 264, 3, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1203, 42, 136, 2, 31, "Input"],
-Cell[1342, 46, 90, 1, 45, "Output"]
+Cell[1293, 43, 136, 2, 31, "Input"],
+Cell[1432, 47, 187, 2, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1469, 52, 172, 2, 43, "Subsection"],
+Cell[1656, 54, 172, 2, 43, "Subsection"],
 Cell[CellGroupData[{
-Cell[1666, 58, 293, 6, 31, "Input"],
-Cell[1962, 66, 191, 3, 31, "Output"]
+Cell[1853, 60, 293, 6, 31, "Input"],
+Cell[2149, 68, 262, 4, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2190, 74, 78, 1, 31, "Input"],
-Cell[2271, 77, 162, 2, 31, "Output"]
+Cell[2448, 77, 78, 1, 31, "Input"],
+Cell[2529, 80, 233, 3, 88, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2470, 84, 258, 6, 31, "Input"],
-Cell[2731, 92, 140, 2, 31, "Output"]
+Cell[2799, 88, 319, 7, 31, "Input"],
+Cell[3121, 97, 552, 11, 21, "Message"],
+Cell[3676, 110, 562, 12, 21, "Message"],
+Cell[4241, 124, 208, 4, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2908, 99, 319, 7, 31, "Input"],
-Cell[3230, 108, 527, 10, 21, "Message"],
-Cell[3760, 120, 535, 11, 21, "Message"],
-Cell[4298, 133, 181, 3, 64, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4516, 141, 185, 3, 31, "Input"],
-Cell[4704, 146, 8648, 146, 1812, "Output"]
+Cell[4486, 133, 185, 3, 31, "Input"],
+Cell[4674, 138, 8648, 146, 1812, "Output"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[13389, 297, 258, 4, 25, "Input"],
-Cell[13650, 303, 214, 4, 31, "Output"]
+Cell[13359, 289, 258, 4, 25, "Input"],
+Cell[13620, 295, 214, 4, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13901, 312, 142, 2, 31, "Input"],
-Cell[14046, 316, 446, 9, 21, "Message"],
-Cell[14495, 327, 78, 1, 31, "Output"]
+Cell[13871, 304, 142, 2, 31, "Input"],
+Cell[14016, 308, 433, 8, 21, "Message"],
+Cell[14452, 318, 78, 1, 31, "Output"]
 }, Open  ]]
-}, Open  ]]
+}, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14634, 335, 150, 2, 63, "Section"],
+Cell[14591, 326, 150, 2, 63, "Section"],
 Cell[CellGroupData[{
-Cell[14809, 341, 199, 3, 31, "Input"],
-Cell[15011, 346, 276, 4, 52, "Output"]
+Cell[14766, 332, 199, 3, 31, "Input"],
+Cell[14968, 337, 373, 5, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15324, 355, 136, 2, 31, "Input"],
-Cell[15463, 359, 219, 5, 48, "Output"]
+Cell[15378, 347, 136, 2, 31, "Input"],
+Cell[15517, 351, 219, 5, 48, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15719, 369, 172, 2, 43, "Subsection"],
-Cell[CellGroupData[{
-Cell[15916, 375, 148, 2, 31, "Input"],
-Cell[16067, 379, 160, 2, 31, "Output"]
+Cell[15773, 361, 102, 2, 31, "Input"],
+Cell[15878, 365, 235, 3, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16264, 386, 332, 6, 52, "Input"],
-Cell[16599, 394, 298, 4, 52, "Output"]
-}, Open  ]],
-Cell[16912, 401, 185, 3, 31, "Input"],
+Cell[16150, 373, 172, 2, 43, "Subsection"],
 Cell[CellGroupData[{
-Cell[17122, 408, 150, 2, 31, "Input"],
-Cell[17275, 412, 598, 12, 39, "Message"],
-Cell[17876, 426, 122, 2, 31, "Output"]
+Cell[16347, 379, 99, 1, 31, "Input"],
+Cell[16449, 382, 1821, 32, 345, "Output"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[18307, 419, 148, 2, 25, "Input"],
+Cell[18458, 423, 229, 3, 31, "Output"]
 }, Open  ]],
-Cell[18013, 431, 167, 3, 31, "Input"],
-Cell[18183, 436, 695, 23, 72, "Input"]
+Cell[CellGroupData[{
+Cell[18724, 431, 125, 2, 31, "Input"],
+Cell[18852, 435, 140, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19029, 442, 332, 6, 52, "Input"],
+Cell[19364, 450, 325, 4, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19726, 459, 150, 2, 31, "Input"],
+Cell[19879, 463, 612, 12, 39, "Message"],
+Cell[20494, 477, 145, 3, 31, "Output"]
+}, Open  ]],
+Cell[20654, 483, 167, 3, 31, "Input"],
+Cell[20824, 488, 695, 23, 72, "Input"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21568, 517, 150, 2, 63, "Section"],
+Cell[CellGroupData[{
+Cell[21743, 523, 225, 3, 31, "Input"],
+Cell[21971, 528, 315, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22323, 537, 136, 2, 31, "Input"],
+Cell[22462, 541, 130, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22629, 547, 123, 2, 31, "Input"],
+Cell[22755, 551, 170, 2, 31, "Output"]
 }, Open  ]]
 }, Open  ]]
 }

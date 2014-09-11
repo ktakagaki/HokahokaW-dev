@@ -1,0 +1,236 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7270,        226]
+NotebookOptionsPosition[      4614,        149]
+NotebookOutlinePosition[      6740,        205]
+CellTagsIndexPosition[      6656,        200]
+WindowTitle->HHNewestFileDate
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["HOKAHOKA W SYMBOL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }]],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"HokahokaW/ref/HHNewestFileDate\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["HokahokaW/ref/HHNewestFileDate"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/HokahokaW/ref/\
+HHNewestFileDate.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$2603], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "HokahokaW/ref/HHNewestFileDate", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic]],
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["HHNewestFileDate", "ObjectName",
+ CellID->1224892054],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"HHNewestFileDate", "[", 
+       StyleBox[
+        RowBox[{
+         StyleBox["packagename",
+          FontSlant->"Italic"], "_String"}]], "]"}]], "InlineFormula"],
+     " \[LineSeparator]Prints the newest file change date for all files \
+within the given package directory"
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->470729873],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->85493899],
+
+Cell[BoxData[
+ RowBox[{"<<", "HokahokaW`"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->104974910],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HHNewestFileDate", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->723958764],
+
+Cell[BoxData["\<\"Fri 12 Sep 2014 01:43:56\"\>"], "Output",
+ ImageSize->{172, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->157344751]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"HHNewestFileDate",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:HokahokaW/guide/HokahokaW", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, 
+  "ExamplePageLinks" -> {}, "NeedPlatMsgIn" -> None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2014, 9, 12, 1, 53, 42.8060669}", 
+    "history" -> {"0.0", "", "", ""}, "context" -> "HokahokaW`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Hokahoka W Symbol", "language" -> "en", "paclet" -> "HokahokaW", 
+    "status" -> "None", "summary" -> 
+    "HHNewestFileDate[packagename_String] Prints the newest file change date \
+for all files within the given package directory", "synonyms" -> {}, "title" -> 
+    "HHNewestFileDate", "titlemodifier" -> "", "windowtitle" -> 
+    "HHNewestFileDate", "type" -> "Symbol", "uri" -> 
+    "HokahokaW/ref/HHNewestFileDate"}, "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (July 1, 2014)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[3495, 98, 387, 15, 31, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->470729873]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 6514, 193}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[588, 21, 2281, 52, 48, "AnchorBarGrid",
+ CellID->1],
+Cell[2872, 75, 59, 1, 43, "ObjectName",
+ CellID->1224892054],
+Cell[2934, 78, 536, 16, 81, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[3495, 98, 387, 15, 31, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->470729873],
+Cell[CellGroupData[{
+Cell[3907, 117, 194, 6, 25, "ExampleSection",
+ CellID->85493899],
+Cell[4104, 125, 97, 3, 28, "Input",
+ CellID->104974910],
+Cell[CellGroupData[{
+Cell[4226, 132, 129, 3, 28, "Input",
+ CellID->723958764],
+Cell[4358, 137, 190, 5, 36, "Output",
+ CellID->157344751]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[4587, 147, 23, 0, 41, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

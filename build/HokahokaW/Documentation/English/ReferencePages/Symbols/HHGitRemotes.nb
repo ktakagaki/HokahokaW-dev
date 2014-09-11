@@ -1,0 +1,244 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7550,        234]
+NotebookOptionsPosition[      4865,        156]
+NotebookOutlinePosition[      7018,        213]
+CellTagsIndexPosition[      6934,        208]
+WindowTitle->HHGitRemotes
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["HOKAHOKA W SYMBOL", "PacletNameCell"], Cell[TextData[Cell[BoxData[
+     ActionMenuBox[
+      FrameBox[
+       InterpretationBox[Cell[TextData[{
+         "URL",
+         StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+          StripOnInput->False]
+        }]],
+        TextCell[
+         Row[{"URL", 
+           Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+       StripOnInput->False], {"\<\"HokahokaW/ref/HHGitRemotes\"\>":>
+      None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["HokahokaW/ref/HHGitRemotes"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web URL\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/language/HokahokaW/ref/\
+HHGitRemotes.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+            If[
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$2271], 
+             "http://reference.wolfram.com/system-modeler/", 
+             "http://reference.wolfram.com/language/"], 
+            "HokahokaW/ref/HHGitRemotes", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic]],
+     LineSpacing->{1.4, 0}]], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["HHGitRemotes", "ObjectName",
+ CellID->1224892054],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"HHGitRemotes", "[", "]"}]], "InlineFormula"],
+     " \[LineSeparator]Prints a list of git remotes for the given notebook's \
+directory"
+    }]]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"HHGitRemotes", "[", 
+       StyleBox[
+        RowBox[{
+         StyleBox["packagename",
+          FontSlant->"Italic"], "_String"}]], "]"}]], "InlineFormula"],
+     " \[LineSeparator]Prints a list of git remotes for the given package"
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  InterpretationBox[
+   StyleBox[
+    GraphicsBox[{},
+     BaselinePosition->Baseline,
+     ImageSize->{6, 0}],
+    CacheGraphics->False],
+   Spacer[6]]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->120017887],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->142367823],
+
+Cell[BoxData[
+ RowBox[{"<<", "HokahokaW`"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->104974910],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HHGitRemotes", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->723958764],
+
+Cell[BoxData["\<\"origin\\thttps://github.com/ktakagaki/HokahokaW-dev.git \
+(fetch)\\norigin\\thttps://github.com/ktakagaki/HokahokaW-dev.git \
+(push)\"\>"], "Output",
+ ImageSize->{454, 33},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->59578870]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"HHGitRemotes",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:HokahokaW/guide/HokahokaW", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, 
+  "ExamplePageLinks" -> {}, "NeedPlatMsgIn" -> None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2014, 9, 12, 1, 53, 41.5199933}", 
+    "history" -> {"0.0", "", "", ""}, "context" -> "HokahokaW`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "Hokahoka W Symbol", "language" -> "en", "paclet" -> "HokahokaW", 
+    "status" -> "None", "summary" -> 
+    "HHGitRemotes[] Prints a list of git remotes for the given notebook's \
+directory HHGitRemotes[packagename_String] Prints a list of git remotes for \
+the given package", "synonyms" -> {}, "title" -> "HHGitRemotes", 
+    "titlemodifier" -> "", "windowtitle" -> "HHGitRemotes", "type" -> 
+    "Symbol", "uri" -> "HokahokaW/ref/HHGitRemotes"}, "SearchTextTranslated" -> 
+  ""},
+CellContext->"Global`",
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (July 1, 2014)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[3642, 103, 387, 15, 31, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->120017887]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 6791, 201}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[584, 21, 2265, 52, 48, "AnchorBarGrid",
+ CellID->1],
+Cell[2852, 75, 55, 1, 43, "ObjectName",
+ CellID->1224892054],
+Cell[2910, 78, 707, 21, 140, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[3642, 103, 387, 15, 31, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->120017887],
+Cell[CellGroupData[{
+Cell[4054, 122, 195, 6, 25, "ExampleSection",
+ CellID->142367823],
+Cell[4252, 130, 97, 3, 28, "Input",
+ CellID->104974910],
+Cell[CellGroupData[{
+Cell[4374, 137, 125, 3, 28, "Input",
+ CellID->723958764],
+Cell[4502, 142, 297, 7, 54, "Output",
+ CellID->59578870]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[4838, 154, 23, 0, 41, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -16,7 +16,7 @@ General::invalidOptionValue="Option argument `2` -> `1` is invalid.";
 (*Git and date messages*)
 
 
-HHNewestFileDate::usage="Returns newest file date in package.";
+HHNewestFileDate::usage="Prints the newest file change date for all files within the given package directory.";
 HHGitRemotes::usage="Prints a list of git remotes for either the given package or the current NotebookDirectory[]";
 HHGitHEADHash::usage="Prints the git HEAD hash for either the given directory or the current NotebookDirectory[]";
 
@@ -67,11 +67,11 @@ HHGitRemotes[package_String]:= Module[{tempFile},
 		HHGitRemotesImpl[ ParentDirectory[DirectoryName[ tempFile ]] ]
 	]
 ];
-HHGitRemotes[package_String]:= HHGitRemotesImpl[ NotebookDirectory[] ];
+HHGitRemotes[]:= HHGitRemotesImpl[ NotebookDirectory[] ];
 
 HHGitRemotesImpl[directory_String]:=
 Module[{tempret},
-	SetDirectory[  ];
+	SetDirectory[ directory ];
 	Run["git remote -v > HHTempGitRemotes.txt"];
 	tempret= Import["HHTempGitRemotes.txt"];
 	DeleteFile["HHTempGitRemotes.txt"];
@@ -92,7 +92,7 @@ HHGitHEADHash[package_String]:= Module[{tempFile},
 		HHGitHEADHashImpl[ ParentDirectory[DirectoryName[ tempFile ]] ]
 	]
 ];
-HHGitHEADHash[package_String]:= HHGitHEADHashImpl[ NotebookDirectory[] ];
+HHGitHEADHash[]:= HHGitHEADHashImpl[ NotebookDirectory[] ];
 
 HHGitHEADHashImpl[directory_String]:=
 Module[{tempret},
