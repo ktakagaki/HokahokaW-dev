@@ -10,8 +10,8 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7270,        226]
-NotebookOptionsPosition[      4614,        149]
+NotebookDataLength[      7271,        226]
+NotebookOptionsPosition[      4615,        149]
 NotebookOutlinePosition[      6740,        205]
 CellTagsIndexPosition[      6656,        200]
 WindowTitle->HHNewestFileDate
@@ -111,7 +111,7 @@ Cell[TextData[{
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CellTags->"PrimaryExamplesSection",
- CellID->470729873],
+ CellID->378952701],
 
 Cell[CellGroupData[{
 
@@ -121,7 +121,7 @@ Cell[TextData[{
  Cell["(1)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->85493899],
+ CellID->688696125],
 
 Cell[BoxData[
  RowBox[{"<<", "HokahokaW`"}]], "Input",
@@ -162,7 +162,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, 
   "ExamplePageLinks" -> {}, "NeedPlatMsgIn" -> None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2014, 9, 12, 1, 53, 42.8060669}", 
+   "built" -> "{2014, 9, 12, 3, 3, 15.6067374}", 
     "history" -> {"0.0", "", "", ""}, "context" -> "HokahokaW`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -194,7 +194,7 @@ CellTagsIndex->{
  "PrimaryExamplesSection"->{
   Cell[3495, 98, 387, 15, 31, "PrimaryExamplesSection",
    CellTags->"PrimaryExamplesSection",
-   CellID->470729873]}
+   CellID->378952701]}
  }
 *)
 (*CellTagsIndex
@@ -213,21 +213,21 @@ Cell[2934, 78, 536, 16, 81, "Usage",
 Cell[CellGroupData[{
 Cell[3495, 98, 387, 15, 31, "PrimaryExamplesSection",
  CellTags->"PrimaryExamplesSection",
- CellID->470729873],
+ CellID->378952701],
 Cell[CellGroupData[{
-Cell[3907, 117, 194, 6, 25, "ExampleSection",
- CellID->85493899],
-Cell[4104, 125, 97, 3, 28, "Input",
+Cell[3907, 117, 195, 6, 25, "ExampleSection",
+ CellID->688696125],
+Cell[4105, 125, 97, 3, 28, "Input",
  CellID->104974910],
 Cell[CellGroupData[{
-Cell[4226, 132, 129, 3, 28, "Input",
+Cell[4227, 132, 129, 3, 28, "Input",
  CellID->723958764],
-Cell[4358, 137, 190, 5, 36, "Output",
+Cell[4359, 137, 190, 5, 36, "Output",
  CellID->157344751]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[4587, 147, 23, 0, 41, "FooterCell"]
+Cell[4588, 147, 23, 0, 41, "FooterCell"]
 }
 ]
 *)
