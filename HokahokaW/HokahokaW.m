@@ -78,7 +78,7 @@ NNFunctionQ::usage=
 Begin["`Private`"];
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Git and date messages*)
 
 
@@ -156,8 +156,8 @@ Style[package, FontWeight -> "Bold", FontVariations -> {"Underline" -> True}], "
 Style[StringJoin@@Riffle[
 					"("<> #[[1]]<>")[" <> #[[2]] <>"]"& /@
 					Union[ImportString[HHGitRemotes[package]][[All, 1;;2]]]
-				,"\n"],
-    FontFamily->"Courier"], "\n",
+				,"\n"],Small, FontFamily->"Courier"], 
+"\n",
 Style[
 	"current Git HEAD:  "<> HHGitHEADHash[package]<>"\n" <>
 	"newest file:  "<> HHNewestFileDate[package]<>" ", Small, FontFamily->"Courier"]
@@ -170,15 +170,15 @@ Style[NotebookFileName[], FontWeight -> "Bold", FontVariations -> {"Underline" -
 Style[StringJoin@@Riffle[
 					"("<> #[[1]]<>")[" <> #[[2]] <>"]"& /@
 					Union[ImportString[HHGitRemotes[]][[All, 1;;2]]]
-				,"\n"],
-    FontFamily->"Courier"], "\n",
+				,"\n"],Small,FontFamily->"Courier"], 
+"\n",
 Style[
 	"current Git HEAD:  "<> HHGitHEADHash[]<>"\n" <>
 	"last saved:  "<> DateString[FileDate[NotebookFileName[]]]<>" ", Small, FontFamily->"Courier"]
 }],"Text", Background -> LightGray]];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Rule List and Option Handling*)
 
 
