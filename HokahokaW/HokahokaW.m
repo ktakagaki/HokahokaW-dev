@@ -71,13 +71,6 @@ NNFunctionQ::usage=
 "returns whether a given symbol is a pure function, or a function rule.";
 
 
-(* ::Subsubsection:: *)
-(*HHImageMean*)
-
-
-HHImageMean::usage="Gives the mean of a series of images. Image data must have the same dimensions and depths.";
-
-
 (* ::Subsection:: *)
 (*Private*)
 
@@ -185,7 +178,7 @@ Style[
 }],"Text", Background -> LightGray]];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Rule List and Option Handling*)
 
 
@@ -301,24 +294,6 @@ HHFunctionQ[_]:=False;
 
 
 HHFunctionQ[args___]:=Message[HHFunctionQ::invalidArgs, {args}];
-
-
-(* ::Subsubsection::Closed:: *)
-(*HHImageMean*)
-
-
-HHImageMean[x:{__Image}]:=
-Module[{tempImageData},
-	tempImageData=ImageData /@ x;
-	If[ Length[Union[  Dimensions/@tempImageData ]]!=1,
-		Message[HHImageMean::dimensionsMustBeSame];,
-		Image[ Mean[tempImageData] ]
-	]
-];
-HHImageMean::dimensionsMustBeSame = "Input list of Image objects must all have the same dimensions and color depths!";
-
-
-HHImageMean[args___]:=Message[HHImageMean::invalidArgs, {args}];
 
 
 (* ::Subsection:: *)
