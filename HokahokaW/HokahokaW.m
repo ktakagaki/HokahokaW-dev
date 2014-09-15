@@ -185,7 +185,7 @@ Style[
 }],"Text", Background -> LightGray]];
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Rule List and Option Handling*)
 
 
@@ -264,11 +264,16 @@ HHAddOptions[args___]:=Message[HHAddOptions::invalidArgs,{args}];
 
 (*HHExtractRules[x_[arg___]]:=Flatten[If[HHRuleQ[#],#,{}]& /@ {arg}];
 HHExtractRules[args___]:=Message[HHExtractRules::invalidArgs,{args}];*)
-HHOptionValue[x_/;ValueQ[x], optionSymbol_]:=OptionValue[Options[x,optionSymbol],optionSymbol];
+HHOptionValue[x_, optionSymbol_]:=Module[{tempOpts},
+	tempOpts=Join[Options[x],Options[Head[x]]];
+	OptionValue[ tempOpts ,optionSymbol ]
+];
 HHOptionValue[args___]:=Message[HHOptionValue::invalidArgs,{args}];
 
-HHAbsoluteOptionValue[x_/;ValueQ[x], optionSymbol_]:=OptionValue[AbsoluteOptions[x,optionSymbol],optionSymbol]
-HHAbsoluteOptionValue[args___]:=Message[HHAbsoluteOptionValue::invalidArgs,{args}];
+HHAbsoluteOptionValue[x_, optionSymbol_]:=Module[{tempOpts},
+	tempOpts=Join[AbsoluteOptions[x],Options[Head[x]]];
+	OptionValue[ tempOpts ,optionSymbol ]
+];
 
 
 (* ::Subsubsection::Closed:: *)
@@ -282,7 +287,7 @@ HHPadZeros[n_,m_]:=Apply[StringJoin,Map[ToString,IntegerDigits[n, 10, m] ]];
 HHPadZeros[args___]:=Message[HHPadZeros::invalidArgs,{args}];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*HHFunctionQ*)
 
 
@@ -298,7 +303,7 @@ HHFunctionQ[_]:=False;
 HHFunctionQ[args___]:=Message[HHFunctionQ::invalidArgs, {args}];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*HHImageMean*)
 
 
