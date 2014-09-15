@@ -63,12 +63,19 @@ HHPadZeros::usage =
 "HHPadZeros[n,m] gives the numeral n string padded to m digits with zeros.";
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*HHFunctionQ*)
 
 
 NNFunctionQ::usage=
 "returns whether a given symbol is a pure function, or a function rule.";
+
+
+(* ::Subsubsection:: *)
+(*HHJavaObjectQ*)
+
+
+HHJavaObjectQ::usage="Checks whether something is a Java object and an instance of the given class/interface.";
 
 
 (* ::Subsection:: *)
@@ -294,6 +301,15 @@ HHFunctionQ[_]:=False;
 
 
 HHFunctionQ[args___]:=Message[HHFunctionQ::invalidArgs, {args}];
+
+
+(* ::Subsubsection:: *)
+(*HHJavaObjectQ*)
+
+
+HHJavaObjectQ[x_/;JavaObjectQ[x]]:= True;
+HHJavaObjectQ[x_/;JavaObjectQ[x], className_String]:= InstanceOf[x, className];
+HHJavaObjectQ[___]:= False;
 
 
 (* ::Subsection:: *)
