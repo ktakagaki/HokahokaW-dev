@@ -12,7 +12,7 @@ General::invalidArgs="Function called with invalid arguments `1`.";
 General::invalidOptionValue="Option argument `2` -> `1` is invalid.";
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Git and date messages*)
 
 
@@ -23,7 +23,7 @@ HHPackageMessage::usage"Prints standard package message.";
 HHNotebookMessage::usage"Prints standard notebook message.";
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Rule List and Option Handling*)
 
 
@@ -71,6 +71,13 @@ NNFunctionQ::usage=
 "returns whether a given symbol is a pure function, or a function rule.";
 
 
+(* ::Subsubsection:: *)
+(*HHImageMean*)
+
+
+HHImageMean::usage="Gives the mean of a series of images. Image data must have the same dimensions and depths.";
+
+
 (* ::Subsection:: *)
 (*Private*)
 
@@ -78,7 +85,7 @@ NNFunctionQ::usage=
 Begin["`Private`"];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Git and date messages*)
 
 
@@ -275,7 +282,7 @@ HHPadZeros[n_,m_]:=Apply[StringJoin,Map[ToString,IntegerDigits[n, 10, m] ]];
 HHPadZeros[args___]:=Message[HHPadZeros::invalidArgs,{args}];
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*HHFunctionQ*)
 
 
@@ -289,6 +296,24 @@ HHFunctionQ[_]:=False;
 
 
 HHFunctionQ[args___]:=Message[HHFunctionQ::invalidArgs, {args}];
+
+
+(* ::Subsubsection:: *)
+(*HHImageMean*)
+
+
+HHImageMean[x:{__Image}]:=
+Module[{tempImageData},
+	tempImageData=ImageData /@ x;
+	If[ Length[Union[  Dimensions/@tempImageData ]]!=1,
+		Message[HHImageMean::dimensionsMustBeSame];,
+		Image[ Mean[tempImageData] ]
+	]
+];
+HHImageMean::dimensionsMustBeSame = "Input list of Image objects must all have the same dimensions and color depths!";
+
+
+HHImageMean[args___]:=Message[HHImageMean::invalidArgs, {args}];
 
 
 (* ::Subsection:: *)
