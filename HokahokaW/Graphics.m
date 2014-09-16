@@ -3,7 +3,7 @@
 (* Wolfram Language Package *)
 
 
-BeginPackage["HokahokaW`Graphics`"];
+BeginPackage["HokahokaW`Graphics`",{"HokahokaW`"}];
 
 
 (* ::Subsubsection:: *)
@@ -18,6 +18,9 @@ HHImageMean::usage="Gives the mean of a series of images. Image data must have t
 
 
 HHGraphicsColumn::usage="Stacks images vertically. In contrast to the standard GraphicsColumn, adjusts widths to be equal.";
+
+
+Options[HHGraphicsColumn]= Options[Graphics];
 
 
 (* ::Subsection:: *)
@@ -49,7 +52,11 @@ HHImageMean[args___]:=Message[HHImageMean::invalidArgs, {args}];
 (*HHGraphicsColumn*)
 
 
-HHGraphicsColumn[list:{__}]:= Module[{tempPlotRange, tempPlotWidth, tailHeightAccumulate},
+HHGraphicsColumn[list:{__}, opts:OptionsPattern[]]:= 
+Module[{tempPlotRange, tempPlotWidth, tailHeightAccumulate,tempHorizPadding},
+
+	(*ToDo: With AbsoluteOption for ImageSize, once MMA bug is fixed*)
+	tempHorizPadding = 1.2;
 
 	tempPlotRange = HHOptionValue[list[[1]],PlotRange];
 
@@ -63,19 +70,22 @@ HHGraphicsColumn[list:{__}]:= Module[{tempPlotRange, tempPlotWidth, tailHeightAc
 			Graphics[
 				Prepend[
 					Table[ Inset[list[[n]], 
-							{tempPlotRange[[1,1]], tempPlotRange[[2,1]]-tailHeightAccumulate[[n-1]]},
+							{tempPlotRange[[1,1]], tempPlotRange[[2,1]]-tailHeightAccumulate[[n-1]]*tempHorizPadding},
 							{Left, Bottom}, tempPlotWidth ],
 						{n,2,Length[list]}
 					],
 					Inset[list[[1]],{tempPlotRange[[1,1]], tempPlotRange[[2,1]]},{Left, Bottom}, tempPlotWidth] 
 				],
-				PlotRange->{tempPlotRange[[1]],
-					  {tempPlotRange[[2,1]]-tailHeightAccumulate[[-1]],
-						tempPlotRange[[2,1]]+tempPlotWidth*HHOptionValue[list[[1]],AspectRatio]}}
+				PlotRange->{tempPlotRange[[1]]+{-1,1}*tempPlotWidth*0.02,
+					  {tempPlotRange[[2,1]]-tailHeightAccumulate[[-1]]*tempHorizPadding,
+						tempPlotRange[[2,1]]+tempPlotWidth*HHOptionValue[list[[1]],AspectRatio]*tempHorizPadding}},
+				Sequence@@HHJoinOptionLists[ Graphics, {opts}, Options[HHGraphicsColumn] ]
 			]
 		]
 	]
 ];
+
+HHGraphicsColumn[args___]:=Message[HHGraphicsColumn::invalidArgs,{args}];
 HHGraphicsColumn::headNotGraphicsObject="The first list element `1` must be a Graphics object with a PlotRange specification!";
 
 

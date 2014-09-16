@@ -4,7 +4,7 @@
 
 (* Created by the Wolfram Workbench Sep 11, 2014 *)
 
-BeginPackage["HokahokaW`"]
+BeginPackage["HokahokaW`",{"JLink`"}]
 (* Exported symbols added here with SymbolName::usage *) 
 
 
@@ -12,7 +12,7 @@ General::invalidArgs="Function called with invalid arguments `1`.";
 General::invalidOptionValue="Option argument `2` -> `1` is invalid.";
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Git and date messages*)
 
 
@@ -85,7 +85,7 @@ HHJavaObjectQ::usage="Checks whether something is a Java object and an instance 
 Begin["`Private`"];
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*Git and date messages*)
 
 
@@ -158,17 +158,24 @@ HHGitHEADHash::noFilesFound = HHNewestFileDate::noFilesFound;
 
 
 HHPackageMessage[package_String]:=
-CellPrint[TextCell[Row[{
-Style[package, FontWeight -> "Bold", FontVariations -> {"Underline" -> True}], "\n" ,
-Style[StringJoin@@Riffle[
+Module[{remotes},
+	remotes=HHGitRemotes[package];
+	If[ remotes === Null || remotes==" " || remotes=="",
+		Message[HHPackageMessage::remoteNotFound, remotes];,
+		CellPrint[TextCell[Row[{
+			Style[package, FontWeight -> "Bold", FontVariations -> {"Underline" -> True}], "\n" ,
+			Style[StringJoin@@Riffle[
 					"("<> #[[1]]<>")[" <> #[[2]] <>"]"& /@
-					Union[ImportString[HHGitRemotes[package]][[All, 1;;2]]]
+					Union[ImportString[remotes][[All, 1;;2]]]
 				,"\n"],Small, FontFamily->"Courier"], 
-"\n",
-Style[
-	"current Git HEAD:  "<> HHGitHEADHash[package]<>"\n" <>
-	"newest file:  "<> HHNewestFileDate[package]<>" ", Small, FontFamily->"Courier"]
-}],"Text", Background -> LightGray]];
+		"\n",
+		Style[
+			"current Git HEAD:  "<> HHGitHEADHash[package]<>"\n" <>
+			"newest file:  "<> HHNewestFileDate[package]<>" ", Small, FontFamily->"Courier"]
+		}],"Text", Background -> LightGray]]
+	]
+];
+HHPackageMessage::remoteNotFound="HHGitRemotes result \"`1`\" is not a valid remote list, the package is not tracked with git, or was probably not found.";
 
 
 HHNotebookMessage[]:=
