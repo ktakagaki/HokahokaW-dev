@@ -30,8 +30,8 @@ Options[HHGraphicsColumn]= Options[Graphics];
 Begin["`Private`"];
 
 
-(* ::Subsubsection::Closed:: *)
-(*HHImageMean*)
+(* ::Subsubsection:: *)
+(*HHImageMean/HHImageMeanSubtractedAdjusted*)
 
 
 HHImageMean[x:{__Image}]:=
@@ -48,7 +48,22 @@ HHImageMean::dimensionsMustBeSame = "Input list of Image objects must all have t
 HHImageMean[args___]:=Message[HHImageMean::invalidArgs, {args}];
 
 
-(* ::Subsubsection:: *)
+HHImageMeanSubtractedAdjusted[x:{__Image}]:=
+Module[{tempImageData,tempMean},
+	tempImageData=ImageData /@ x;
+	If[ Length[Union[  Dimensions/@tempImageData ]]!=1,
+		Message[HHImageMeanSubtractedAdjusted::dimensionsMustBeSame];,
+		tempMean=Mean[tempImageData];
+		ImageAdjust/@(Image/@((#-tempMean)& /@ tempImageData))
+	]
+];
+HHImageMeanSubtractedAdjusted::dimensionsMustBeSame = "Input list of Image objects must all have the same dimensions and color depths!";
+
+
+HHImageMeanSubtractedAdjusted[args___]:=Message[HHImageMean::invalidArgs, {args}];
+
+
+(* ::Subsubsection::Closed:: *)
 (*HHGraphicsColumn*)
 
 
