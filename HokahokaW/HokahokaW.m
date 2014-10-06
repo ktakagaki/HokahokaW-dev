@@ -10,9 +10,10 @@ BeginPackage["HokahokaW`",{"JLink`"}]
 
 General::invalidArgs="Function called with invalid arguments `1`.";
 General::invalidOptionValue="Option argument `2` -> `1` is invalid.";
+General::deprecated="Function is deprecated, use `1` instead.";
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Git and date messages*)
 
 
@@ -63,7 +64,7 @@ HHPadZeros::usage =
 "HHPadZeros[n,m] gives the numeral n string padded to m digits with zeros.";
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*HHFunctionQ*)
 
 
@@ -71,11 +72,46 @@ NNFunctionQ::usage=
 "returns whether a given symbol is a pure function, or a function rule.";
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*HHJavaObjectQ*)
 
 
 HHJavaObjectQ::usage="Checks whether something is a Java object and an instance of the given class/interface.";
+
+
+(* ::Subsubsection:: *)
+(*HHMedianStandardDeviation*)
+
+
+HHStandardDeviationMedianEstimate::usage="Makes a standard deviation estimate based on medians (less sensitive to outliers).";
+
+
+(* ::Subsubsection:: *)
+(*HHThreshold*)
+
+
+HHThreshold::usage="Takes a trace and returns timepoints at which it crosses threshold.";
+
+
+HHThresholdLevel::usage="What level to use for threshold.";
+HHThresholdDirection::usage="What direction to use for threshold.";
+
+
+Options[HHThreshold]={HHThresholdLevel->Automatic, HHThresholdDirection->Automatic};
+
+
+(* ::Subsubsection:: *)
+(*HHDetectTrain*)
+
+
+HHDetectTrain::usage="Detect a train.";
+
+
+HHTrainPulseLengthMinimum::usage="Number of different pulse lengths to accept.";
+HHTrainBlackout::usage="Number of samples from beginning (or {beginning, end}) to reject for thresholding.";
+
+
+Options[HHDetectTrain]={HHTrainPulseLengthMinimum->0, HHTrainBlackout->None};
 
 
 (* ::Subsection:: *)
@@ -85,7 +121,7 @@ HHJavaObjectQ::usage="Checks whether something is a Java object and an instance 
 Begin["`Private`"];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Git and date messages*)
 
 
@@ -310,7 +346,7 @@ HHFunctionQ[_]:=False;
 HHFunctionQ[args___]:=Message[HHFunctionQ::invalidArgs, {args}];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*HHJavaObjectQ*)
 
 
@@ -319,11 +355,89 @@ HHJavaObjectQ[x_/;JavaObjectQ[x], className_String]:= InstanceOf[x, className];
 HHJavaObjectQ[___]:= False;
 
 
+(* ::Subsubsection:: *)
+(*HHMedianStandardDeviation*)
+
+
+HHStandardDeviationMedianEstimate[data_List] := MedianDeviation[data]/0.6745;
+
+
+(* ::Subsubsection:: *)
+(*HHThreshold*)
+
+
+HHThreshold[data_List, opts:OptionsPattern[]] :=  HHThreshold[data, Automatic, opts];
+
+
+HHThreshold[data_List, Automatic, opts:OptionsPattern[]] := HHThresholdImplSimpleAutoMedian[data];
+
+
+HHThreshold[args___]:=Message[HHThreshold::invalidArgs,{args}];
+
+
+HHThresholdImplSimpleAutoMedian[data_List]:=
+Module[{tempData, tempThresh, tempRes},
+	HHThresholdImplSimple[
+		tempData=data-Median[data],
+		HHStandardDeviationMedianEstimate[tempData]*4
+	]
+];
+
+
+HHThresholdImplSimple[data_List, threshValue_]:=
+Module[{tempRes},
+	tempRes=FoldList[Plus, 1, Length /@ Split[If[# < threshValue, 0, 1]& /@ data]];
+	tempRes=If[ Length[tempRes]>2 && data[[1]]>threshValue, tempRes[[3 ;; ]], tempRes[[2 ;; ]] ];
+	tempRes=If[ Length[tempRes]>2 && data[[-1]]>threshValue, tempRes[[ ;; -3]], tempRes[[ ;; -2]] ];
+	tempRes	
+];
+
+
+(* ::Subsubsection:: *)
+(*HHDetectTrain*)
+
+
+HHDetectTrain[data_List, opts:OptionsPattern[]] := HHDetectTrain[data, Automatic, opts]
+
+
+HHDetectTrain[data_List, Automatic, opts:OptionsPattern[]] := 
+Module[{threshed, tempRes,
+		optBlackout,optPulseMin},
+
+	threshed=HHThreshold[data, Automatic];
+	If[ Length[threshed]==0, Message[HHDetectTrain::noThresholdCrosses]];
+	If[ !EvenQ[Length[threshed]], Message[HHDetectTrain::oddThresholdCounts]];
+	tempRes= (#-{0,1})& /@ Partition[threshed,2];
+	
+	optBlackout = OptionValue[HHTrainBlackout];
+	If[ Head[optBlackout] === List && Length[optBlackout]==2,
+		tempRes = Select[ tempRes, (#[[2]]<optBlackout[[1]] && #[[1]]>optBlackout[[2]])&],
+		If[ Head[optBlackout]===Integer || Head[optBlackout] ===Real,
+			tempRes = Select[ tempRes, (#[[2]]>optBlackout)&]
+	]];
+	
+	optPulseMin = OptionValue[HHTrainPulseLengthMinimum];
+	If[ (Head[optPulseMin] === Integer || Head[optPulseMin] === Real),
+		If[ optPulseMin >= 1, tempRes = Select[ tempRes, (#[[2]]-#[[1]] >= optPulseMin)& ] ]
+	];
+
+	tempRes
+	
+];
+
+
+HHDetectTrain::noThresholdCrosses="No threshold crosses detected";
+HHDetectTrain::oddThresholdCounts="Some error, odd number of thresholds should not occur with HHThreshold[]";
+
+
+HHDetectTrain[args___]:=Message[HHDetectTrain::invalidArgs,{args}];
+
+
 (* ::Subsection:: *)
 (*Ending*)
 
 
-End[]
+End[];
 
 
 HHPackageMessage["HokahokaW`"];
