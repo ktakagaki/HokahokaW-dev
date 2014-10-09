@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7271,        226]
+NotebookDataLength[      7285,        227]
 NotebookOptionsPosition[      4615,        149]
-NotebookOutlinePosition[      6740,        205]
-CellTagsIndexPosition[      6656,        200]
+NotebookOutlinePosition[      6754,        206]
+CellTagsIndexPosition[      6670,        201]
 WindowTitle->HHNewestFileDate
 WindowFrame->Normal*)
 
@@ -59,7 +59,7 @@ HHNewestFileDate.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$2603], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$2645], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
             "HokahokaW/ref/HHNewestFileDate", ".html"]], None}]}]},
@@ -111,7 +111,7 @@ Cell[TextData[{
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CellTags->"PrimaryExamplesSection",
- CellID->378952701],
+ CellID->278386608],
 
 Cell[CellGroupData[{
 
@@ -121,7 +121,7 @@ Cell[TextData[{
  Cell["(1)", "ExampleCount"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
- CellID->688696125],
+ CellID->753892019],
 
 Cell[BoxData[
  RowBox[{"<<", "HokahokaW`"}]], "Input",
@@ -162,7 +162,7 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, 
   "ExamplePageLinks" -> {}, "NeedPlatMsgIn" -> None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2014, 9, 12, 3, 3, 15.6067374}", 
+   "built" -> "{2014, 10, 9, 21, 57, 4.0399026}", 
     "history" -> {"0.0", "", "", ""}, "context" -> "HokahokaW`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
@@ -174,7 +174,7 @@ for all files within the given package directory", "synonyms" -> {}, "title" ->
     "HHNewestFileDate", "type" -> "Symbol", "uri" -> 
     "HokahokaW/ref/HHNewestFileDate"}, "SearchTextTranslated" -> ""},
 CellContext->"Global`",
-FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[
@@ -183,8 +183,9 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], CellContext -> "Global`"], 
    Cell[
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
-  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (July 1, 2014)", 
-  StyleDefinitions -> "Default.nb"]
+  FrontEndVersion -> 
+  "10.0 for Microsoft Windows (64-bit) (September 9, 2014)", StyleDefinitions -> 
+  "Default.nb"]
 ]
 (* End of Notebook Content *)
 
@@ -194,12 +195,12 @@ CellTagsIndex->{
  "PrimaryExamplesSection"->{
   Cell[3495, 98, 387, 15, 31, "PrimaryExamplesSection",
    CellTags->"PrimaryExamplesSection",
-   CellID->378952701]}
+   CellID->278386608]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 6514, 193}
+ {"PrimaryExamplesSection", 6528, 194}
  }
 *)
 (*NotebookFileOutline
@@ -213,10 +214,10 @@ Cell[2934, 78, 536, 16, 81, "Usage",
 Cell[CellGroupData[{
 Cell[3495, 98, 387, 15, 31, "PrimaryExamplesSection",
  CellTags->"PrimaryExamplesSection",
- CellID->378952701],
+ CellID->278386608],
 Cell[CellGroupData[{
 Cell[3907, 117, 195, 6, 25, "ExampleSection",
- CellID->688696125],
+ CellID->753892019],
 Cell[4105, 125, 97, 3, 28, "Input",
  CellID->104974910],
 Cell[CellGroupData[{

@@ -10,11 +10,11 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7504,        233]
-NotebookOptionsPosition[      4791,        154]
-NotebookOutlinePosition[      6971,        212]
-CellTagsIndexPosition[      6887,        207]
-WindowTitle->HHGitHEADHash
+NotebookDataLength[      5152,        145]
+NotebookOptionsPosition[      3277,         93]
+NotebookOutlinePosition[      5074,        141]
+CellTagsIndexPosition[      5031,        138]
+WindowTitle->HHThreshold
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -31,12 +31,12 @@ Cell[BoxData[GridBox[{
         TextCell[
          Row[{"URL", 
            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
-       StripOnInput->False], {"\<\"HokahokaW/ref/HHGitHEADHash\"\>":>
+       StripOnInput->False], {"\<\"HokahokaW/ref/HHThreshold\"\>":>
       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
       Module[{DocumentationSearch`Private`nb$}, 
        DocumentationSearch`Private`nb$ = NotebookPut[
           Notebook[{
-            Cell["HokahokaW/ref/HHGitHEADHash"]}, Visible -> False]]; 
+            Cell["HokahokaW/ref/HHThreshold"]}, Visible -> False]]; 
        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
@@ -49,7 +49,7 @@ Cell[BoxData[GridBox[{
               MakeBoxes[
                Hyperlink[
                "http://reference.wolfram.com/language/HokahokaW/ref/\
-HHGitHEADHash.html"], StandardForm]], "Input", TextClipboardType -> 
+HHThreshold.html"], StandardForm]], "Input", TextClipboardType -> 
              "PlainText"]}, Visible -> False]]; 
        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
@@ -59,10 +59,10 @@ HHGitHEADHash.html"], StandardForm]], "Input", TextClipboardType ->
           URL[
            StringJoin[
             If[
-             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$1805], 
+             TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$3323], 
              "http://reference.wolfram.com/system-modeler/", 
              "http://reference.wolfram.com/language/"], 
-            "HokahokaW/ref/HHGitHEADHash", ".html"]], None}]}]},
+            "HokahokaW/ref/HHThreshold", ".html"]], None}]}]},
       Appearance->None,
       MenuAppearance->Automatic]],
      LineSpacing->{1.4, 0}]], "AnchorBar"]}
@@ -73,82 +73,21 @@ HHGitHEADHash.html"], StandardForm]], "Input", TextClipboardType ->
    "RowsIndexed" -> {}}},
  CellID->1],
 
-Cell["HHGitHEADHash", "ObjectName",
+Cell["HHThreshold", "ObjectName",
  CellID->1224892054],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
      Cell[BoxData[
-      RowBox[{"HHGitHEADHash", "[", "]"}]], "InlineFormula"],
-     " \[LineSeparator]Prints the current git HEAD hash for the given \
-notebook's directory"
-    }]]},
-   {"", Cell[TextData[{
-     Cell[BoxData[
-      RowBox[{"HHGitHEADHash", "[", 
-       StyleBox[
-        RowBox[{
-         StyleBox["packagename",
-          FontSlant->"Italic"], "_String"}]], "]"}]], "InlineFormula"],
-     " \[LineSeparator]Prints the current git HEAD hash for the given package"
+      RowBox[{"HHThreshold", "[", "]"}]], "InlineFormula"],
+     " \[LineSeparator]HHThreshold"
     }]]}
   }]], "Usage",
  GridBoxOptions->{
  GridBoxBackground->{
-  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
    "RowsIndexed" -> {}}},
  CellID->982511436],
-
-Cell[CellGroupData[{
-
-Cell[TextData[{
- Cell[BoxData[
-  InterpretationBox[
-   StyleBox[
-    GraphicsBox[{},
-     BaselinePosition->Baseline,
-     ImageSize->{6, 0}],
-    CacheGraphics->False],
-   Spacer[6]]]],
- "Examples",
- "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
-}], "PrimaryExamplesSection",
- WholeCellGroupOpener->True,
- CellTags->"PrimaryExamplesSection",
- CellID->238873075],
-
-Cell[CellGroupData[{
-
-Cell[TextData[{
- "Basic Examples",
- "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(1)", "ExampleCount"]
-}], "ExampleSection", "ExampleSection",
- WholeCellGroupOpener->True,
- CellID->559026605],
-
-Cell[BoxData[
- RowBox[{"<<", "HokahokaW`"}]], "Input",
- CellLabel->"In[1]:=",
- CellID->104974910],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"HHGitHEADHash", "[", "\"\<HokahokaW`\>\"", "]"}]], "Input",
- CellLabel->"In[2]:=",
- CellID->723958764],
-
-Cell[BoxData["\<\"8e8c81ffc70d026ca4dcf615359cdf7386f7ba2e\"\>"], "Output",
- ImageSize->{284, 15},
- ImageMargins->{{0, 0}, {0, 0}},
- ImageRegion->{{0, 1}, {0, 1}},
- CellLabel->"Out[2]=",
- CellID->336170147]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]],
 
 Cell[" ", "FooterCell"]
 },
@@ -156,7 +95,7 @@ Saveable->False,
 ScreenStyleEnvironment->"Working",
 WindowSize->{725, 750},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-WindowTitle->"HHGitHEADHash",
+WindowTitle->"HHThreshold",
 TaggingRules->{
  "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
   GridBox[{{
@@ -167,18 +106,15 @@ TaggingRules->{
     Left], "HasOptions" -> False, "ExampleCounter" -> 1, 
   "ExamplePageLinks" -> {}, "NeedPlatMsgIn" -> None, "RootCaptions" -> "", 
   "Metadata" -> {
-   "built" -> "{2014, 10, 9, 21, 57, 1.1677383}", 
+   "built" -> "{2014, 10, 9, 21, 57, 6.5830480}", 
     "history" -> {"0.0", "", "", ""}, "context" -> "HokahokaW`", 
     "keywords" -> {}, "specialkeywords" -> {}, 
     "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
     "Hokahoka W Symbol", "language" -> "en", "paclet" -> "HokahokaW", 
-    "status" -> "None", "summary" -> 
-    "HHGitHEADHash[] Prints the current git HEAD hash for the given \
-notebook's directory HHGitHEADHash[packagename_String] Prints the current git \
-HEAD hash for the given package", "synonyms" -> {}, "title" -> 
-    "HHGitHEADHash", "titlemodifier" -> "", "windowtitle" -> "HHGitHEADHash", 
-    "type" -> "Symbol", "uri" -> "HokahokaW/ref/HHGitHEADHash"}, 
-  "SearchTextTranslated" -> ""},
+    "status" -> "None", "summary" -> "HHThreshold[] HHThreshold", 
+    "synonyms" -> {}, "title" -> "HHThreshold", "titlemodifier" -> "", 
+    "windowtitle" -> "HHThreshold", "type" -> "Symbol", "uri" -> 
+    "HokahokaW/ref/HHThreshold"}},
 CellContext->"Global`",
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
 StyleDefinitions->Notebook[{
@@ -197,47 +133,22 @@ StyleDefinitions->Notebook[{
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{
- "PrimaryExamplesSection"->{
-  Cell[3658, 103, 387, 15, 31, "PrimaryExamplesSection",
-   CellTags->"PrimaryExamplesSection",
-   CellID->238873075]}
- }
+CellTagsIndex->{}
 *)
 (*CellTagsIndex
-CellTagsIndex->{
- {"PrimaryExamplesSection", 6744, 200}
- }
+CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[585, 21, 2269, 52, 48, "AnchorBarGrid",
+Cell[583, 21, 2261, 52, 70, "AnchorBarGrid",
  CellID->1],
-Cell[2857, 75, 56, 1, 43, "ObjectName",
+Cell[2847, 75, 54, 1, 70, "ObjectName",
  CellID->1224892054],
-Cell[2916, 78, 717, 21, 140, "Usage",
+Cell[2904, 78, 343, 11, 70, "Usage",
  CellID->982511436],
-Cell[CellGroupData[{
-Cell[3658, 103, 387, 15, 31, "PrimaryExamplesSection",
- CellTags->"PrimaryExamplesSection",
- CellID->238873075],
-Cell[CellGroupData[{
-Cell[4070, 122, 195, 6, 25, "ExampleSection",
- CellID->559026605],
-Cell[4268, 130, 97, 3, 28, "Input",
- CellID->104974910],
-Cell[CellGroupData[{
-Cell[4390, 137, 126, 3, 28, "Input",
- CellID->723958764],
-Cell[4519, 142, 206, 5, 36, "Output",
- CellID->336170147]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]],
-Cell[4764, 152, 23, 0, 41, "FooterCell"]
+Cell[3250, 91, 23, 0, 70, "FooterCell"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
